@@ -1,0 +1,143 @@
+    body {
+        font-family: 'Manrope', sans-serif;
+        font-size: 0.8125rem;
+        background: hsl(210, 46%, 95%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+
+    .card {
+        display: flex;
+        max-width: 730px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .card-image {
+        width: 40%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .card-content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: min(2rem, 8%);
+    }
+
+    .card-content h1 {
+        font-size: 1.25rem;
+        color: hsl(217, 19%, 35%);
+    }
+
+    .card-content p {
+        color: hsl(214, 17%, 51%);
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .author-info h2 {
+        font-size: 0.9rem;
+        color: hsl(217, 19%, 35%);
+        cursor: pointer;
+    }
+
+    .author-info span {
+        font-size: 0.8rem;
+        color: hsl(212, 23%, 69%);
+    }
+
+    .share-btn {
+        border: transparent;
+        background: hsl(210, 46%, 95%);
+        padding: min(0.8rem, 8%);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .menu {
+        background-color: hsl(217, 19%, 35%);
+        width: 200px;
+        height: 40px;
+        color: hsl(210, 46%, 95%);
+        text-transform: uppercase;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 12px;
+        position: absolute;
+        top: -45px;
+        right: 0;
+    }
+
+    .menu h3 {
+        font-size: 0.7rem;
+        letter-spacing: 3px;
+    }
+
+    .menu img {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    .share-container {
+        position: relative;
+    }
+
+    .share-btn {
+        border: none;
+        background: hsl(210, 46%, 95%);
+        padding: 0.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .share-btn:hover {
+        background: hsl(217, 19%, 35%);
+    }
+
+    .share-container:hover .menu {
+        display: flex;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column;
+        }
+
+        .card-image {
+            width: 60%;
+        }
+
+        .card-content {
+            width: 50%;
+        }
+    }
